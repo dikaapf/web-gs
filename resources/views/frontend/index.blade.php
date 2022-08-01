@@ -4,49 +4,82 @@
 
 @section('content')
 
-<section class="section-header pb-6 pb-lg-10 bg-primary text-white">
-    <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img class="d-block w-100" src="{{asset('img/banner-galipat-slide1.png')}}" alt="Galipat Banner 1">
-            </div>
-            <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Second slide">
-            </div>
-            <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Third slide">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        </div>
-        <!-- <div class="row justify-content-center">
-            <div class="col-12 col-md-10 text-center">
-                <h1 class="display-1 mb-4">{{app_name()}}</h1>
-                <p class="lead text-muted">
-                    {!! setting('meta_description') !!}
-                </p>
+<section class="section-header bg-primary text-white">
+    <!-- Carousel wrapper -->
+<div id="carouselMaterialStyle" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+  </div>
 
-                @include('frontend.includes.messages')
-            </div>
-        </div> -->
+  <!-- Inner -->
+  <div class="carousel-inner rounded-5 shadow-4-strong">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <img src="{{asset('img/banner-galipat-slide1.png')}}" class="d-block w-100"
+        alt="Sunset Over the City" />
     </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img src="{{asset('img/banner-galipat-slide1.png')}}" class="d-block w-100"
+        alt="Canyon at Nigh" />
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img src="{{asset('img/banner-galipat-slide1.png')}}" class="d-block w-100"
+        alt="Cliff Above a Stormy Sea" />
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel wrapper -->
     <div class="pattern bottom"></div>
 </section>
 
 <!-- Bagian 2 -->
+<section class="section section-ld">
+    <div class="container">
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" alt="Card image cap">
+            <div class="card-body">
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" alt="Card image cap">
+            <div class="card-body">
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" alt="Card image cap">
+            <div class="card-body">
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" alt="Card image cap">
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Bagian 3 -->
 <section class="section section-ld">
     <div class="container">
         <div class="row">
@@ -74,7 +107,7 @@
     </div>
 </section>
 
-<!-- Bagian 3 -->
+<!-- Bagian 4 -->
 <section class="section section-ld">
     <div class="container">
         <div class="row">

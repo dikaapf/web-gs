@@ -5,6 +5,10 @@
                 <img class="navbar-brand-dark common" src="{{asset('img/logogalipat.png')}}" height="35" alt="Logo light">
                 <img class="navbar-brand-light common" src="{{asset('img/logogalipat.png')}}" height="35" alt="Logo dark">
             </a>
+            <div class="mr-3">
+            <span>GALIPAT</span>
+            </div>
+
             <div class="navbar-collapse collapse" id="navbar_global">
                 <div class="navbar-collapse-header">
                     <div class="row">
@@ -21,48 +25,52 @@
                     </div>
                 </div>
                 <ul class="navbar-nav navbar-nav-hover justify-content-center">
-                    <li class="nav-item">
+                    <li class="nav-item mr-3">
                         <a href="/" class="nav-link">
-                            <span class="fas fa-home mr-2"></span> Beranda
+                        Home
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mr-3">
                         <a href="{{ route('frontend.posts.index') }}" class="nav-link">
-                            <span class="fas fa-file-alt mr-1"></span> Tentang Kami
+                         Services
                         </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link" data-toggle="dropdown" aria-controls="pages_submenu" aria-expanded="false" aria-label="Toggle pages menu item">
                             <span class="nav-link-inner-text">
-                                <span class="fas fa-file-image mr-1"></span>
-                                Pages
+                                Store
                             </span>
                             <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
                         </a>
                         <ul class="dropdown-menu" id="pages_submenu">
                             <li>
                                 <a class="dropdown-item" href="{{ route('frontend.posts.index') }}">
-                                    <span class="fas fa-file-alt mr-1"></span> Posts
+                                    <span class="fas fa-file-alt mr-1"></span> ITC
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('frontend.categories.index') }}">
-                                    <span class="fas fa-sitemap mr-1"></span> Categories
+                                    <span class="fas fa-sitemap mr-1"></span> Tangcity
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('frontend.tags.index') }}">
-                                    <span class="fas fa-tags mr-1"></span> Tags
+                                    <span class="fas fa-tags mr-1"></span> Bekasi
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('frontend.comments.index') }}">
-                                    <span class="fas fa-comments mr-1"></span> Comments
+                                  Comments
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item mr-3">
+                        <a href="{{ route('frontend.posts.index') }}" class="nav-link">
+                            <span class="fas fa-file-alt mr-1"></span> Check Status
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" aria-expanded="false" data-toggle="dropdown">
                             <span class="nav-link-inner-text mr-1">
                                 <span class="fas fa-user mr-1"></span>
@@ -126,7 +134,7 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div class="d-none d-lg-block">
@@ -134,9 +142,11 @@
                 <a href="{{ route('backend.dashboard') }}" class="btn btn-white animate-up-2 mr-3"><i class="fas fa-tachometer-alt mr-2"></i> Dashboard</a>
                 @endcan
 
-                <a href="#" class="btn btn-outline-white animate-up-2 mr-3"><i class="fas fa-th-large mr-2"></i> Support</a>
+                <a href="#" class="animate-up-2 mr-5"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="animate-up-2 mr-5"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="animate-up-2 mr-5"><i class="fab fa-youtube"></i></a>
 
-                <a href="#" target="_blank" class="btn btn-secondary animate-up-2"><i class="fas fa-paper-plane mr-2"></i> Contact</a>
+                <a href="#" target="_blank" class="btn btn-outline-white animate-up-2"><i class="fas fa-phone-alt"></i> Layanan<br>081284269090</a>
             </div>
             <div class="d-flex d-lg-none align-items-center">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
